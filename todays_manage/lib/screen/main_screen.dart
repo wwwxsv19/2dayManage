@@ -39,15 +39,17 @@ class MyAppState extends State<MyApp> {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.shifting,
+          type: BottomNavigationBarType.fixed,
           items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home, color: Colors.black), label: "오늘의 당번"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_month, color: Colors.black), label: "이달의 당번")
+            BottomNavigationBarItem( icon: Icon(Icons.home), label: "오늘의 당번" ),
+            BottomNavigationBarItem( icon: Icon(Icons.calendar_month), label: "이달의 당번" )
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.amber[800],
+          selectedItemColor: Color(0xffFFD600),
+          unselectedItemColor: Colors.black,
+          showUnselectedLabels: true,
           onTap: _onItemTapped,
+
         ),
       ),
     );
