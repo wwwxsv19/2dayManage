@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../widget/appbar/main_appbar.dart';
+import '../widget/navibar/btm_navibar.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,19 +39,7 @@ class MyAppState extends State<MyApp> {
             ),
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem( icon: Icon(Icons.home), label: "오늘의 당번" ),
-            BottomNavigationBarItem( icon: Icon(Icons.calendar_month), label: "이달의 당번" )
-          ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Color(0xffFFD600),
-          unselectedItemColor: Colors.black,
-          showUnselectedLabels: true,
-          onTap: _onItemTapped,
-
-        ),
+        bottomNavigationBar: NaviAppbar(),
       ),
     );
   }
