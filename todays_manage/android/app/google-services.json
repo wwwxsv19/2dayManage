@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "161082640342",
+    "firebase_url": "https://daymanage-c079c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "daymanage-c079c",
+    "storage_bucket": "daymanage-c079c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161082640342:android:dc8f955aaa355feb0ac677",
+        "android_client_info": {
+          "package_name": "com.example.todays_manage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfKJ4pGcpSP_GXvc_gds9ppDzZqeNjvcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
